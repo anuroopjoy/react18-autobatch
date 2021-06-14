@@ -18,11 +18,9 @@ class App extends React.Component {
                 }));
             });
             console.log(this.state.count);
-            flushSync(() => {
-                this.setState(({ valid }) => ({
-                    valid: !valid
-                }));
-            });
+            this.setState(({ valid }) => ({
+                valid: !valid
+            }));
         });
     }
 
